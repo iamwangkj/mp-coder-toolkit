@@ -1,0 +1,22 @@
+<view class="table">
+  <view class="tr bg-green">
+    <view class="th">名称</view>
+    <view class="th">star数</view>
+    <view class="th ">创建时间</view>
+    <view class="th ">最新更新</view>
+  </view>
+  <block wx:for="{{resList}}" wx:key="unique">
+    <view class="tr" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.name}}</view>
+      <view class="td">{{item.star}}</view>
+      <view class="td">{{item.createDate}}</view>
+      <view class="td">{{item.updateDate}}</view>
+    </view>
+    <view class="tr bg-green-light" wx:else>
+      <view class="td">{{item.name}}</view>
+      <view class="td">{{item.star}}</view>
+      <view class="td">{{item.createDate}}</view>
+      <view class="td">{{item.updateDate}}</view>
+    </view>
+  </block>
+</view>

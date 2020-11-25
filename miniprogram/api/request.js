@@ -1,8 +1,11 @@
+import Toast from '../utils/toast'
+
 const BASE_URL = ''
 
 function request (opt) {
   opt.url = /http/ig.test(opt.url) ? opt.url : `${BASE_URL}/${opt.url}`
   return new Promise((resolve, reject) => {
+    Toast.showLoading()
     wx.request(Object.assign({
       method: 'GET',
       url: '',
@@ -22,6 +25,9 @@ function request (opt) {
           mask: true
         })
         reject(err)
+      },
+      complete () {
+        Toast.hideLoading()
       }
     }, opt))
   })

@@ -1,4 +1,4 @@
-import * as github from './github'
+import github from './github'
 
 export default {
   github

@@ -1,0 +1,27 @@
+<view>
+  <van-search value="{{ keyword }}" input-align="center" placeholder="请输入搜索关键词" bind:search="searchOnGithub" />
+  <!-- 搜索结果 -->
+  <van-popup show="{{ showSearchRes }}" bind:close="closeSearchRes" closeable position="bottom" custom-style="height: 80%">
+    <view class="search-list">
+      <van-cell-group>
+        <van-cell wx:for="{{searchRes}}" wx:key="unique" title="{{item.full_name}}" data-item="{{item}}" bind:click="addKeyword">
+          +
+        </van-cell>
+      </van-cell-group>
+    </view>
+  </van-popup>
+  <!-- 结果 -->
+  <block wx:for="{{keywordList}}" wx:key="unique">
+    <van-swipe-cell right-width="{{ 65 }}">
+      <van-cell-group>
+        <van-cell title="{{item.name}}" value="" />
+      </van-cell-group>
+      <view slot="right">
+        <van-button type="danger" bindclick="delKeyword" data-item="{{item}}">删除</van-button>
+      </view>
+    </van-swipe-cell>
+  </block>
+  <view>
+    <van-button type="primary" size="large" bindclick="toCompare">对比</van-button>
+  </view>
+</view>

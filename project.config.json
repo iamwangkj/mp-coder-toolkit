@@ -40,16 +40,10 @@
   },
   "appid": "wx13cdf3eec9fa3ff5",
   "projectname": "mp-template",
-  "libVersion": "2.8.1",
+  "libVersion": "2.14.0",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
@@ -72,6 +66,19 @@
           "id": -1,
           "name": "pages/me/me",
           "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/githubSearch/githubSearch",
+          "pathName": "pages/githubSearch/githubSearch",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/githubCompare/githubCompare",
+          "pathName": "pages/githubCompare/githubCompare",
+          "query": "",
           "scene": null
         }
       ]

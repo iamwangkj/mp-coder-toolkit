@@ -1,17 +1,9 @@
 <view class="">
-  <van-button type="default">默认按钮</van-button>
-  <van-button type="primary">主要按钮</van-button>
-  <van-button type="info">信息按钮</van-button>
-  <van-button disabled type="primary">禁用状态</van-button>
-  <van-checkbox value="{{ checked }}" shape="square" bind:change="onChange">复选框</van-checkbox>
-  <image class="pic" src="https://gank.io/images/f4f6d68bf30147e1bdd4ddbc6ad7c2a2" mode="widthFix" lazy-load="true" />
-  <!-- <image class="pic" src="" mode="widthFix" lazy-load="true" />
-  <image class="pic" src="" mode="widthFix" lazy-load="true" />
-  <image class="pic" src="" mode="widthFix" lazy-load="true" /> -->
-  <!-- <van-tabbar active="{{ active }}" bind:change="onChange">
-    <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-    <van-tabbar-item icon="search">标签</van-tabbar-item>
-    <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-    <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
-  </van-tabbar> -->
+  <!-- <van-button type="default">默认按钮</van-button> -->
+  <van-grid>
+    <van-grid-item icon="fire" text="star对比" bind:click="toGithubSearch" />
+    <van-grid-item icon="photo-o" text="文字" />
+    <van-grid-item icon="photo-o" text="文字" />
+    <van-grid-item icon="photo-o" text="文字" />
+  </van-grid>
 </view>

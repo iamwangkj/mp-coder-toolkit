@@ -1,0 +1,4 @@
+.search-list {
+  width: 100vw;
+  padding-top: 100rpx;
+}

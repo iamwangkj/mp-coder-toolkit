@@ -1,21 +1,33 @@
 {
   "pages": [
+    "pages/githubSearch/githubSearch",
     "pages/index/index",
     "pages/login/login",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/githubCompare/githubCompare"
   ],
   "usingComponents": {
     "van-button": "@vant/weapp/button/index",
     "van-checkbox": "@vant/weapp/checkbox/index",
-    "van-checkbox-group": "@vant/weapp/checkbox-group/index"
+    "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index"
   },
   "tabBar": {
-    "color": "#8a8a8a",
-    "selectedColor": "#2c2c2c",
+    "color": "#9ED99D",
+    "selectedColor": "#0AC161",
     "backgroundColor": "#fff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/githubSearch/githubSearch",
         "text": "首页",
         "iconPath": "/imgs/tab-icon-home.png",
         "selectedIconPath": "/imgs/tab-icon-home-active.png"

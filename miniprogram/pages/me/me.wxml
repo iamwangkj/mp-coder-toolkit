@@ -1,5 +1,5 @@
 <view>
   <image class="" src="{{avatarUrl}}" mode="widthFix" />
-  <text class="" selectable="false" space="false" decode="false">{{nickName}}</text>
+  <text class="">{{nickName}}</text>
     
 </view>  

@@ -1,17 +1,12 @@
-import api from '../../api/index'
-const app = getApp()
+import router from '../../utils/router'
 
 Page({
-  data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
+  data: {},
   onLoad () {
-    api.github.search('thinkjs').then((res) => {
-      console.log('github查询结果=', res)
-    })
+  },
+
+  toGithubSearch () {
+    router.to('/pages/githubSearch/githubSearch')
   }
 
 })
