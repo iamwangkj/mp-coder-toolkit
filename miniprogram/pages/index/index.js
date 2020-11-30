@@ -1,4 +1,4 @@
-import router from '../../utils/router'
+import router from '../../lib/router'
 
 Page({
   data: {},

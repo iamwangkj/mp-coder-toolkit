@@ -1,4 +1,4 @@
-import Toast from '../utils/toast'
+import Toast from './toast'
 
 const BASE_URL = ''
 

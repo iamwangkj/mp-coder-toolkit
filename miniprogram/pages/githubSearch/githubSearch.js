@@ -1,6 +1,6 @@
 import api from '../../api/index'
-import router from '../../utils/router'
-import toast from '../../utils/toast'
+import router from '../../lib/router'
+import toast from '../../lib/toast'
 
 Page({
   data: {
