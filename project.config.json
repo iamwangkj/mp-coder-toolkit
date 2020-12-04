@@ -3,7 +3,7 @@
   "cloudfunctionRoot": "cloudfunctions/",
   "setting": {
     "urlCheck": false,
-    "es6": true,
+    "es6": false,
     "enhance": true,
     "postcss": true,
     "preloadBackgroundData": false,
@@ -39,7 +39,7 @@
     "minifyWXSS": true
   },
   "appid": "wx13cdf3eec9fa3ff5",
-  "projectname": "mp-template",
+  "projectname": "mp-coder-toolkit",
   "libVersion": "2.14.0",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},

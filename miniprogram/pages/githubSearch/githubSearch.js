@@ -1,6 +1,6 @@
 import api from '../../api/index'
-import router from '../../lib/router'
-import toast from '../../lib/toast'
+import router from '../../wxapi/router'
+import toast from '../../wxapi/toast'
 
 Page({
   data: {
