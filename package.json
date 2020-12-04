@@ -5,7 +5,8 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@vant/weapp": "^1.6.1"
+    "@vant/weapp": "^1.6.1",
+    "wx-computed2": "^1.0.3"
   },
   "devDependencies": {
     "eslint": "^7.8.1"

@@ -11,17 +11,31 @@
     </view>
   </van-popup>
   <!-- 结果 -->
-  <block wx:for="{{keywordList}}" wx:key="unique">
-    <van-swipe-cell right-width="{{ 65 }}">
-      <van-cell-group>
-        <van-cell title="{{item.name}}" value="" />
-      </van-cell-group>
-      <view slot="right">
-        <van-button type="danger" bindclick="delKeyword" data-item="{{item}}">删除</van-button>
-      </view>
-    </van-swipe-cell>
-  </block>
-  <view>
-    <van-button type="primary" size="large" bindclick="toCompare">对比</van-button>
+  <view class="result-wrapper">
+    <!-- <van-swipe-cell right-width="{{ 65 }}">
+        <van-checkbox>
+          <van-cell-group>
+            <van-cell title="{{item.name}}" value="" />
+          </van-cell-group>
+          <view slot="right">
+            <van-button type="danger" bindclick="delKeyword" data-item="{{item}}">删除</van-button>
+          </view>
+        </van-checkbox>
+      </van-swipe-cell> -->
+    <van-checkbox-group value="{{ selectedKeywordList }}" bind:change="changeKeywordList">
+      <block wx:for="{{keywordList}}" wx:key="unique">
+        <!-- <view class="keyword-item"> -->
+          <van-swipe-cell right-width="{{ 65 }}">
+            <van-checkbox name="{{item}}" class="keyword-item">{{item}}</van-checkbox>
+            <view slot="right">
+              <van-button type="danger" bindclick="delKeyword" data-item="{{item}}">删除</van-button>
+            </view>
+          </van-swipe-cell>
+        <!-- </view> -->
+      </block>
+    </van-checkbox-group>
+    <view class="btn-wrapper">
+      <van-button type="info" size="normal" bind:click="toCompare">对比</van-button>
+    </view>
   </view>
 </view>

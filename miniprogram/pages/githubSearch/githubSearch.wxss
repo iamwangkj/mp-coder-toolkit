@@ -1,4 +1,21 @@
 .search-list {
-  width: 100vw;
+  width: 100%;
   padding-top: 100rpx;
+}
+
+.keyword-item {
+  padding: 10rpx;
+}
+
+.result-wrapper {
+  min-height: 80vh;
+  padding-bottom: 100rpx;
+  position: relative;
+}
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
 }

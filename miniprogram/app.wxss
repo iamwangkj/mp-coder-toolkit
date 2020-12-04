@@ -1,4 +1,7 @@
-page {}
+page {
+  box-sizing: border-box;
+  padding: 18rpx;
+}
 
 image {
   height: 0;
